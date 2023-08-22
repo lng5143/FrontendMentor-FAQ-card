@@ -1,11 +1,12 @@
 <template>
-    <div>
+    <div class="question">
         <p>{{ question }}</p>
         <img 
         v-on:click="changeDisplay"
         src="../assets/images/icon-arrow-down.svg"/>
     </div>
     <p v-show="displayAnswer">{{ answer }}</p>
+    <hr>
 </template>
 
 <script>
@@ -34,5 +35,21 @@
 </script>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+    html {
+        font-family: 'Kumbh Sans';
+    }
+
+    p {
+        color: hsl(238, 29%, 16%);
+    }
+
+    .question {
+        display: flex;
+        margin: 10px 0px;
+        font-weight: 700;
+    }
+
 
 </style>

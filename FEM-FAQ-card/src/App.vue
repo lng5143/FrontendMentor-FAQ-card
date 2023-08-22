@@ -1,5 +1,15 @@
 <template>
   <div class="container">
+    <div class="illu-mobile">
+      <img src="./assets/images/illustration-woman-online-mobile.svg">
+      <img src="./assets/images/bg-pattern-mobile.svg">
+    </div>
+
+    <div class="illu-desktop">
+      <img src="./assets/images/illustration-box-desktop.svg">
+      <img src="./assets/images/illustration-woman-online-desktop.svg">
+      <img src="./assets/images/bg-pattern-desktop.svg">
+    </div>
     <h1>FAQ</h1>
     <question v-for="faq in faqs"
     v-bind:question="faq.q"
@@ -43,5 +53,21 @@
 </script>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
+  body {
+    background-color: hsl(273, 75%, 66%);
+  }
+
+  .container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 30px 0px 20px rgba(0,0,0,0.3);
+  }
+
+  .illu-desktop {
+    display: none;
+  }
 </style>
